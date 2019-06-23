@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="RegexLib" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="libRegexLib" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj\Release\" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="..\..\..\..\..\..\opt\cpptools\boost_1_53_0\libs\regex\src\c_regex_traits.cpp" />
+		<Unit filename="..\..\..\..\..\..\opt\cpptools\boost_1_53_0\libs\regex\src\cpp_regex_traits.cpp" />
+		<Unit filename="..\..\..\..\..\..\opt\cpptools\boost_1_53_0\libs\regex\src\cregex.cpp" />
+		<Unit filename="..\..\..\..\..\..\opt\cpptools\boost_1_53_0\libs\regex\src\fileiter.cpp" />
+		<Unit filename="..\..\..\..\..\..\opt\cpptools\boost_1_53_0\libs\regex\src\icu.cpp" />
+		<Unit filename="..\..\..\..\..\..\opt\cpptools\boost_1_53_0\libs\regex\src\instances.cpp" />
+		<Unit filename="..\..\..\..\..\..\opt\cpptools\boost_1_53_0\libs\regex\src\internals.hpp" />
+		<Unit filename="..\..\..\..\..\..\opt\cpptools\boost_1_53_0\libs\regex\src\posix_api.cpp" />
+		<Unit filename="..\..\..\..\..\..\opt\cpptools\boost_1_53_0\libs\regex\src\regex.cpp" />
+		<Unit filename="..\..\..\..\..\..\opt\cpptools\boost_1_53_0\libs\regex\src\regex_debug.cpp" />
+		<Unit filename="..\..\..\..\..\..\opt\cpptools\boost_1_53_0\libs\regex\src\regex_raw_buffer.cpp" />
+		<Unit filename="..\..\..\..\..\..\opt\cpptools\boost_1_53_0\libs\regex\src\regex_traits_defaults.cpp" />
+		<Unit filename="..\..\..\..\..\..\opt\cpptools\boost_1_53_0\libs\regex\src\static_mutex.cpp" />
+		<Unit filename="..\..\..\..\..\..\opt\cpptools\boost_1_53_0\libs\regex\src\usinstances.cpp" />
+		<Unit filename="..\..\..\..\..\..\opt\cpptools\boost_1_53_0\libs\regex\src\w32_regex_traits.cpp" />
+		<Unit filename="..\..\..\..\..\..\opt\cpptools\boost_1_53_0\libs\regex\src\wc_regex_traits.cpp" />
+		<Unit filename="..\..\..\..\..\..\opt\cpptools\boost_1_53_0\libs\regex\src\wide_posix_api.cpp" />
+		<Unit filename="..\..\..\..\..\..\opt\cpptools\boost_1_53_0\libs\regex\src\winstances.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

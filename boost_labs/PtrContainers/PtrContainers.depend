@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1364837526 source:c:\users\rodrigo\@rodrigo_projects\labs\boost_labs\ptrcontainers\main.cpp
+	<iostream>
+	<vector>
+	<boost/ptr_container/ptr_vector.hpp>
+

@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1364840450 source:c:\users\rodrigo\@rodrigo_projects\labs\boost_labs\bind\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<vector>
+	<algorithm>
+	<boost/bind.hpp>
+	<boost/ref.hpp>
+

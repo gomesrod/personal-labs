@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="HelloBoost/HelloBoost.cbp" />
+		<Project filename="SmartPtrs/SmartPtrs.cbp" />
+		<Project filename="PtrContainers/PtrContainers.cbp" />
+		<Project filename="Bind/Bind.cbp" active="1" />
+		<Project filename="Function/Function.cbp" />
+		<Project filename="Lambdas/Lambdas.cbp" />
+		<Project filename="Signals2/Signals2.cbp" />
+		<Project filename="Regex/Regex.cbp" />
+		<Project filename="RegexLib/RegexLib.cbp" />
+		<Project filename="Threads/Threads.cbp" />
+		<Project filename="Threads2/Threads2.cbp" />
+		<Project filename="Variant/Variant.cbp" />
+		<Project filename="Any/Any.cbp" />
+		<Project filename="RegexDate/RegexDate.cbp" />
+		<Project filename="Datetime/Datetime.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

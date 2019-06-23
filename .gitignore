@@ -1,0 +1,26 @@
+# IDE files
+.idea
+*.iml
+
+# Build files and binaries
+target/
+Debug/
+Release/
+
+*.exe
+*.dll
+*.obj
+*.pyc
+
+*.a
+*.o
+*.ncb
+*.sdf
+*.suo
+*.ilk
+*.pdb
+
+# Logs, dumps, etc
+*.log
+*.tlog
+*.stackdump

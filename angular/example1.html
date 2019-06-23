@@ -1,0 +1,30 @@
+<html>
+<head>
+  <script src="angular.js"></script>
+</head>
+
+<body ng-app>
+  <p>The number is {{3 + 4}}</p>
+
+  <hr />
+
+  <p ng-init="authenticated = false">You are:
+    <span ng-show="authenticated"> authenticated. Congratulations!</span>
+    <span ng-hide="authenticated"> not authenticated. Go away please</span>
+
+    <button ng-bind="authenticated ? 'Logoff' : 'Login'"
+        ng-click="authenticated = !authenticated"></button>
+  </p>
+
+  <hr />
+
+  <label>Type something here: </label>
+  <input type="text" ng-init="form_test_1='value'" ng-model="form_test_1" />
+  <p>You typed <strong ng-bind="form_test_1"></strong> </p>
+
+  <hr />
+  <label>Love it? </Label> <input type="checkbox" ng-init="love_it='Love it!'"
+      ng-model="love_it" ng-true-value="'Love it!'" ng-false-value="'Hate it!'" />
+  <span ng-bind="love_it" />
+
+</html>

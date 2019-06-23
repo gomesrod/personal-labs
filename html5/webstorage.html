@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Webstorage test</title>
+		<script>
+			function testStorage() {
+				if (typeof(Storage) == "undefined") {
+					alert("Storage not available!!");
+				} else {
+					alert("Storage available !!!!");
+				}
+			}
+
+			function storeLocal() {
+				localStorage.lastname = "Smith";
+			}
+
+			function retrieveLocal() {
+				alert(localStorage.lastname);
+			}
+		</script>
+	</head>
+
+	<body>
+		<button onclick="testStorage()">Test</button>
+		<button onclick="storeLocal()">Store - Local</button>
+		<button onclick="retrieveLocal()">Retrieve - Local</button>
+
+	</body>
+</html>

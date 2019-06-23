@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1369147898 source:c:\users\rodrigo\@rodrigo_projects\labs\boost_labs\variant\main.cpp
+	<boost/variant.hpp>
+	<iostream>
+	<string>
+

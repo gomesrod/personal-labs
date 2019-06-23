@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Canvas Tests</title>
+	</head>
+	<body>
+		<hr/>
+		<canvas id="myCanvas" width="300" height="100">
+		</canvas>
+		<hr/>
+		<span id="result">Drawing...</span>
+		<div id="imagesContainer" style="display:none;">
+			<img id="scream" src="image.jpg" />
+		</div>
+	</body>
+
+	<script>
+	function doSomeDrawings() {
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+
+		//////
+		ctx.fillStyle = "#FF0000";
+		ctx.fillRect(0,0,150,75);
+
+		//////
+		ctx.moveTo(0,0);
+		ctx.lineTo(150,75);
+		ctx.lineTo(200,0);
+		ctx.stroke();
+
+		/////
+		ctx.fillStyle = "#00FF00";
+		ctx.beginPath();
+		ctx.arc(30,30,20,0,2*Math.PI);
+		ctx.stroke();
+
+		ctx.beginPath();
+		ctx.arc(50,50,8,0,3/2*Math.PI);
+		ctx.fill();
+
+		////////
+		ctx.font="12px Arial";
+		ctx.strokeText("Hello Canvas", 150, 90);
+
+		/////
+		var grad1 = ctx.createLinearGradient(0,0,300,0);
+		grad1.addColorStop(0, "blue");
+		grad1.addColorStop(1, "green");
+		ctx.fillStyle = grad1;
+		ctx.fillRect(0,95,300,100);
+
+		/////
+		var img=document.getElementById("scream");
+		// Se colocar direto nao funciona, só com delay!
+		setTimeout(function() {
+			ctx.drawImage(img, 250, 0);
+		}, 100);
+	}
+
+	try {
+		doSomeDrawings();
+		document.getElementById("result").innerHTML = "Ok";
+	} catch (e) {
+		alert(e);
+	}
+	</script>
+</html>

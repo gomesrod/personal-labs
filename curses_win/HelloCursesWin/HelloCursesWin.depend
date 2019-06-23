@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1448285430 source:d:\rodrigo\projects\labs\curses_win\hellocurseswin\main.cpp
+	<iostream>
+	<curses.h>
+
+1216145605 c:\software\libs\pdcurses\curses.h
+	<stdarg.h>
+	<stddef.h>
+	<stdio.h>
+	<wchar.h>
+

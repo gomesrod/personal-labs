@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1365517788 source:c:\users\rodrigo\@rodrigo_projects\labs\boost_labs\regex\main.cpp
+	<iostream>
+	<boost/regex.hpp>
+

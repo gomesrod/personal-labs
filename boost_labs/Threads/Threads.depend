@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1366743735 source:c:\users\rodrigo\@rodrigo_projects\labs\boost_labs\threads\main.cpp
+	<boost/thread.hpp>
+	<iostream>
+

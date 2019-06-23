@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>New Input Types</title>
+		<script>
+			function testInputs() {
+				var results = document.getElementById("results");
+
+				results.innerHTML = "";
+
+				var inputs = document.getElementsByTagName("input");
+				for (var i = 0; i < inputs.length; i++) {
+					var input = inputs[i];
+					results.innerHTML = results.innerHTML
+						+ "<br/>" + input.name + "   : "
+						+ input.value;
+				}
+			}
+		</script>
+		<style>
+			label {
+				padding-left:10px;
+			}
+		</style>
+	</head>
+	<body>
+		<form oninput="sum_ab.value = parseInt(sum_a.value)+parseInt(sum_b.value)">
+
+		<label>Browser:</label>
+		<input type="text" name="browser" 
+			list="browsers" />
+		<datalist id="browsers">
+			<option value="Internet Explorer" />
+			<option value="Mozilla Firefox" />
+			<option value="Google Chrome" />
+		</datalist>
+
+		<label>Color:</label><input type="color" name="favcolor" />
+
+		<label>Encryption:</label> <keygen name="security" />
+
+		<label>Using pattern: </label><input type="text"
+			name="usingpattern" pattern="[ABC]" placeholder="Digite A,B ou C"/>
+
+		<br />
+		<button onclick="testInputs()">Test Inputs</button>
+
+		<br />
+		<span>Calculations:</span>
+		<input type="range" id="sum_a" value="0" /> 
+		+ <input type="number" id="sum_b" value="0" />
+		= <output name="sum_ab" />
+
+		</form>
+		<div id="results">
+		</div>
+	</body>
+</html>

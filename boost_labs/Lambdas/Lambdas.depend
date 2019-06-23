@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1364848149 source:c:\users\rodrigo\@rodrigo_projects\labs\boost_labs\lambdas\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<algorithm>
+	<iterator>
+	<set>
+	<boost/function.hpp>
+	<boost/lambda/lambda.hpp>
+	<boost/lambda/if.hpp>
+

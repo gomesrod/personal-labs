@@ -1,0 +1,1 @@
+print("[DEBUG] *** Iniciando mypackage ***")

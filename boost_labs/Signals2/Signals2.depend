@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1364852292 source:c:\users\rodrigo\@rodrigo_projects\labs\boost_labs\signals2\main.cpp
+	<boost/signals2.hpp>
+	<iostream>
+

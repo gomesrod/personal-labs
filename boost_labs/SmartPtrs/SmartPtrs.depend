@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1364826640 source:c:\users\rodrigo\@rodrigo_projects\labs\boost_labs\smartptrs\main.cpp
+	<iostream>
+	<boost/shared_ptr.hpp>
+	<boost/shared_array.hpp>
+	<boost/weak_ptr.hpp>
+

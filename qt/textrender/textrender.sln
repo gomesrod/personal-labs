@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "textrender", "textrender.vcxproj", "{B7AA53B0-8E98-387B-A19D-5EF0FFB7EBAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7AA53B0-8E98-387B-A19D-5EF0FFB7EBAD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B7AA53B0-8E98-387B-A19D-5EF0FFB7EBAD}.Debug|Win32.Build.0 = Debug|Win32
+		{B7AA53B0-8E98-387B-A19D-5EF0FFB7EBAD}.Release|Win32.ActiveCfg = Release|Win32
+		{B7AA53B0-8E98-387B-A19D-5EF0FFB7EBAD}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

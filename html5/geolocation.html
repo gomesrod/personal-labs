@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Geolocation</title>
+
+		<script>
+			function showPosition(position) {
+				alert("Latitude: " + position.coords.latitude 
+					+ ", Longitude: " + position.coords.longitude);
+
+					var map_url = "http://maps.googleapis.com/maps/api/staticmap?"
+						+ "center=" + position.coords.latitude + "," 
+						+ position.coords.longitude 
+						+ "&zoom=14&size=400x300&sensor=false";
+					document.getElementById("mapholder").innerHTML = 
+						"<img src='" + map_url + "'/>";
+			}
+
+			function showError(error) {
+				switch(error.code)
+				{
+					case error.PERMISSION_DENIED:
+						alert("User denied the request for Geolocation");
+						break;
+					case error.POSITION_UNAVAILABLE:
+						alert("Location information is unavailable");
+						break;
+					case error.TIMEOUT:
+						alert("The request timed out");
+						break;
+					case error.UNKNOWN_ERROR:
+						alert("An unknown error occurred");
+						break;
+					default:
+						alert("A REALLY unknown error occurred");
+				}
+			}
+
+			if(navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(showPosition, showError);
+			} else {
+				alert("Geolocation is not supported");
+			}
+		</script>
+
+	</head>
+	<body>
+		<div id="mapholder"></div>
+	</body>
+</html>

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1369772196 source:c:\users\rodrigo\@rodrigo_projects\labs\boost_labs\datetime\main.cpp
+	<iostream>
+	<boost/date_time/gregorian/gregorian.hpp>
+
