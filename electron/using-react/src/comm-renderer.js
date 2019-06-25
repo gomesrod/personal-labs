@@ -6,6 +6,6 @@ const { ipcRenderer } = require('electron')
 
 export default {
     writeToFile: function(contents) {
-        ipcRenderer.sendSync('write-to-file', 'ping')
+        return ipcRenderer.sendSync('write-to-file', contents)
     }
 }

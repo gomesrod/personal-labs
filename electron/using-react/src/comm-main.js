@@ -11,9 +11,9 @@ const { ipcMain } = require('electron')
 ipcMain.on('write-to-file', (event, obj) => {
     console.log("Main received write-to-file message", obj)
 
-    writeToFile(JSON.stringify(obj))
+    const filePath = writeToFile(JSON.stringify(obj))
 
-    event.returnValue = 'OK'
+    event.returnValue = filePath
 })
 
 function writeToFile(contents) {

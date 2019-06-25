@@ -31,7 +31,7 @@ class MyCounter extends React.Component {
 
     saveList() {
         const items = this.state.items
-        FilesService.writeContents(JSON.stringify(items))
+        CommService.writeToFile(items)
     }
 
     render() {
