@@ -31,7 +31,11 @@ class MyCounter extends React.Component {
 
     saveList() {
         const items = this.state.items
-        CommService.writeToFile(items)
+        const savedPath = CommService.writeToFile(items)
+
+        let myNotification = new Notification('List saved', {
+            body: `List saved to file: ${savedPath}`
+        })
     }
 
     render() {
@@ -40,7 +44,7 @@ class MyCounter extends React.Component {
             <button onClick={this.addItem}>Add</button>
 
             <ul>
-                {this.state.items.map(item => <li>{item}</li>)}
+                {this.state.items.map((item, idx) => <li key={idx}>{item}</li>)}
             </ul>
 
             {this.state.items

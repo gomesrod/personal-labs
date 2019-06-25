@@ -20,4 +20,5 @@ function writeToFile(contents) {
     const filePath = path.join(os.homedir(), "my-reactapp-data.json")
 
     fs.writeFileSync(filePath, contents);
+    return filePath
 }
