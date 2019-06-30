@@ -1,6 +1,7 @@
 # IDE files
 .idea
 *.iml
+.attach_pid*
 
 # Downloaded deps
 node_modules/
