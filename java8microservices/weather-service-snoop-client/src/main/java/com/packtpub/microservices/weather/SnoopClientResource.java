@@ -1,4 +1,4 @@
-package com.packtpub.microservices.weather.temperature;
+package com.packtpub.microservices.weather;
 
 import eu.agilejava.snoop.annotation.Snoop;
 import eu.agilejava.snoop.client.SnoopServiceClient;
@@ -12,7 +12,7 @@ import javax.ws.rs.core.MediaType;
 
 @Path("/invoke")
 @RequestScoped
-public class ClientInvokerResource {
+public class SnoopClientResource {
     @Inject
     @Snoop(serviceName = "weatherSnoop")
     private SnoopServiceClient client;
