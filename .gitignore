@@ -6,6 +6,9 @@
 # Downloaded deps
 node_modules/
 
+# Python virtual env
+ENV/
+
 # Build files and binaries
 target/
 Debug/
