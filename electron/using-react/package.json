@@ -83,7 +83,7 @@
     ]
   },
   "devDependencies": {
-    "electron": "^5.0.5"
+    "electron": "^7.2.4"
   },
   "jest": {
     "collectCoverageFrom": [
